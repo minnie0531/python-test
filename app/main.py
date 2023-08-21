@@ -23,6 +23,7 @@ app = FastAPI(
 # This path is for health check or test
 @app.get("/")
 async def root():
+    print("logging test is it infolog?")
     logger.info("hello world :D")
     logger.warning("hello world :(")
     logger.error("hello world :X")
